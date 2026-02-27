@@ -7,7 +7,7 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 6,IngenieriaMecanica,Calculo,7.4,4,2024
 7,IngenieriaIndustrial,Fisica,6.8,8,2023
 8,IngenieriaCivil,Calculo,9.3,8,2022
-9,IngenieriaMecanica,Base de Datos,6.2,8,2022
+9,IngenieriaMecanica,BasedeDatos,6.2,8,2022
 10,IngenieriaenComputacion,Programacion,5.5,6,2022
 11,IngenieriaIndustrial,Calculo,6.4,7,2023
 12,IngenieriaMecanica,Programacion,7.7,6,2024
@@ -29,23 +29,23 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 28,IngenieriaIndustrial,Programacion,7.4,1,2022
 29,IngenieriaIndustrial,Estadistica,9.4,3,2024
 30,IngenieriaMecanica,Fisica,8.5,1,2023
-31,IngenieriaCivil,Base de Datos,5.3,8,2023
+31,IngenieriaCivil,BasedeDatos,5.3,8,2023
 32,IngenieriaIndustrial,Estadistica,9.7,3,2024
 33,IngenieriaIndustrial,Fisica,9.0,7,2023
 34,IngenieriaMecanica,Programacion,7.1,7,2024
 35,IngenieriaCivil,Estadistica,6.2,1,2024
-36,IngenieriaIndustrial,Base de Datos,9.4,3,2022
+36,IngenieriaIndustrial,BasedeDatos,9.4,3,2022
 37,IngenieriaMecanica,Calculo,9.0,5,2022
 38,IngenieriaCivil,Algoritmos,5.5,6,2022
 39,IngenieriaMecanica,Fisica,6.4,6,2023
 40,IngenieriaIndustrial,Calculo,7.1,8,2024
-41,IngenieriaMecanica,Base de Datos,5.8,5,2024
+41,IngenieriaMecanica,BasedeDatos,5.8,5,2024
 42,IngenieriaCivil,Algoritmos,6.5,3,2024
 43,IngenieriaCivil,Calculo,7.9,7,2023
-44,IngenieriaCivil,Base de Datos,9.3,5,2023
+44,IngenieriaCivil,BasedeDatos,9.3,5,2023
 45,IngenieriaenComputacion,Fisica,6.7,6,2023
 46,IngenieriaCivil,Fisica,9.7,3,2024
-47,IngenieriaMecanica,Base de Datos,7.9,7,2024
+47,IngenieriaMecanica,BasedeDatos,7.9,7,2024
 48,IngenieriaIndustrial,Calculo,7.0,2,2024
 49,IngenieriaMecanica,Calculo,5.7,3,2022
 50,IngenieriaMecanica,Algoritmos,6.9,6,2022
@@ -69,36 +69,36 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 68,IngenieriaCivil,Programacion,7.3,8,2022
 69,IngenieriaIndustrial,Programacion,6.2,3,2023
 70,IngenieriaIndustrial,Calculo,8.7,1,2023
-71,IngenieriaMecanica,Base de Datos,6.7,4,2023
+71,IngenieriaMecanica,BasedeDatos,6.7,4,2023
 72,IngenieriaMecanica,Calculo,7.1,6,2024
 73,IngenieriaMecanica,Fisica,6.9,1,2024
 74,IngenieriaMecanica,Estadistica,6.3,4,2024
-75,IngenieriaIndustrial,Base de Datos,5.9,3,2023
+75,IngenieriaIndustrial,BasedeDatos,5.9,3,2023
 76,IngenieriaMecanica,Fisica,8.3,8,2023
 77,IngenieriaenComputacion,Programacion,9.7,6,2024
-78,IngenieriaenComputacion,Base de Datos,7.6,8,2023
-79,IngenieriaenComputacion,Base de Datos,9.9,3,2022
+78,IngenieriaenComputacion,BasedeDatos,7.6,8,2023
+79,IngenieriaenComputacion,BasedeDatos,9.9,3,2022
 80,IngenieriaIndustrial,Programacion,6.5,3,2024
 81,IngenieriaIndustrial,Fisica,8.5,7,2023
 82,IngenieriaMecanica,Fisica,8.9,7,2024
 83,IngenieriaCivil,Estadistica,7.9,6,2024
 84,IngenieriaCivil,Calculo,9.7,4,2024
 85,IngenieriaCivil,Programacion,9.7,7,2024
-86,IngenieriaenComputacion,Base de Datos,5.7,2,2022
+86,IngenieriaenComputacion,BasedeDatos,5.7,2,2022
 87,IngenieriaIndustrial,Algoritmos,9.6,7,2022
 88,IngenieriaIndustrial,Estadistica,5.7,4,2024
 89,IngenieriaMecanica,Calculo,8.9,7,2022
 90,IngenieriaenComputacion,Calculo,6.0,3,2023
-91,IngenieriaIndustrial,Base de Datos,9.9,2,2023
+91,IngenieriaIndustrial,BasedeDatos,9.9,2,2023
 92,IngenieriaenComputacion,Algoritmos,8.6,2,2024
 93,IngenieriaenComputacion,Fisica,6.4,3,2024
 94,IngenieriaCivil,Calculo,9.4,6,2024
 95,IngenieriaCivil,Programacion,7.3,4,2022
-96,IngenieriaMecanica,Base de Datos,7.1,3,2024
+96,IngenieriaMecanica,BasedeDatos,7.1,3,2024
 97,IngenieriaIndustrial,Fisica,9.6,3,2022
 98,IngenieriaenComputacion,Algoritmos,6.5,6,2022
 99,IngenieriaenComputacion,Fisica,5.3,4,2022
-100,IngenieriaIndustrial,Base de Datos,6.3,5,2024
+100,IngenieriaIndustrial,BasedeDatos,6.3,5,2024
 101,IngenieriaCivil,Calculo,9.7,3,2024
 102,IngenieriaIndustrial,Programacion,7.0,8,2022
 103,IngenieriaMecanica,Calculo,6.9,5,2022
@@ -106,10 +106,10 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 105,IngenieriaCivil,Algoritmos,6.2,7,2022
 106,IngenieriaenComputacion,Estadistica,6.0,7,2024
 107,IngenieriaCivil,Fisica,6.2,6,2024
-108,IngenieriaIndustrial,Base de Datos,9.6,8,2022
+108,IngenieriaIndustrial,BasedeDatos,9.6,8,2022
 109,IngenieriaCivil,Calculo,9.5,4,2022
-110,IngenieriaIndustrial,Base de Datos,6.9,7,2022
-111,IngenieriaCivil,Base de Datos,7.0,5,2024
+110,IngenieriaIndustrial,BasedeDatos,6.9,7,2022
+111,IngenieriaCivil,BasedeDatos,7.0,5,2024
 112,IngenieriaenComputacion,Fisica,9.5,4,2024
 113,IngenieriaCivil,Programacion,9.1,3,2022
 114,IngenieriaMecanica,Estadistica,7.4,4,2023
@@ -118,15 +118,15 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 117,IngenieriaCivil,Calculo,7.1,1,2024
 118,IngenieriaenComputacion,Estadistica,9.0,8,2024
 119,IngenieriaIndustrial,Estadistica,8.4,8,2024
-120,IngenieriaIndustrial,Base de Datos,5.9,1,2022
+120,IngenieriaIndustrial,BasedeDatos,5.9,1,2022
 121,IngenieriaIndustrial,Calculo,9.7,7,2023
-122,IngenieriaMecanica,Base de Datos,7.2,7,2022
+122,IngenieriaMecanica,BasedeDatos,7.2,7,2022
 123,IngenieriaenComputacion,Programacion,8.9,3,2022
 124,IngenieriaIndustrial,Fisica,6.3,7,2023
 125,IngenieriaIndustrial,Fisica,5.5,3,2023
-126,IngenieriaIndustrial,Base de Datos,6.2,7,2022
+126,IngenieriaIndustrial,BasedeDatos,6.2,7,2022
 127,IngenieriaenComputacion,Fisica,5.3,6,2022
-128,IngenieriaIndustrial,Base de Datos,9.5,3,2023
+128,IngenieriaIndustrial,BasedeDatos,9.5,3,2023
 129,IngenieriaMecanica,Estadistica,8.3,6,2024
 130,IngenieriaMecanica,Calculo,8.5,6,2023
 131,IngenieriaMecanica,Estadistica,7.5,5,2023
@@ -136,13 +136,13 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 135,IngenieriaenComputacion,Algoritmos,7.9,6,2024
 136,IngenieriaenComputacion,Algoritmos,9.5,6,2024
 137,IngenieriaIndustrial,Calculo,6.9,6,2022
-138,IngenieriaenComputacion,Base de Datos,8.7,1,2022
+138,IngenieriaenComputacion,BasedeDatos,8.7,1,2022
 139,IngenieriaIndustrial,Estadistica,9.2,2,2023
 140,IngenieriaMecanica,Programacion,7.6,8,2024
 141,IngenieriaMecanica,Algoritmos,5.2,2,2024
 142,IngenieriaCivil,Calculo,9.6,8,2022
 143,IngenieriaCivil,Estadistica,9.2,1,2024
-144,IngenieriaMecanica,Base de Datos,8.0,1,2022
+144,IngenieriaMecanica,BasedeDatos,8.0,1,2022
 145,IngenieriaMecanica,Fisica,5.8,7,2022
 146,IngenieriaIndustrial,Calculo,9.2,3,2023
 147,IngenieriaCivil,Programacion,9.1,1,2024
@@ -152,16 +152,16 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 151,IngenieriaMecanica,Fisica,9.6,8,2024
 152,IngenieriaIndustrial,Fisica,7.7,2,2023
 153,IngenieriaCivil,Estadistica,6.0,2,2023
-154,IngenieriaCivil,Base de Datos,6.0,7,2024
+154,IngenieriaCivil,BasedeDatos,6.0,7,2024
 155,IngenieriaCivil,Estadistica,7.3,5,2022
 156,IngenieriaCivil,Estadistica,5.6,2,2024
-157,IngenieriaMecanica,Base de Datos,9.4,1,2024
+157,IngenieriaMecanica,BasedeDatos,9.4,1,2024
 158,IngenieriaMecanica,Fisica,6.2,4,2023
 159,IngenieriaIndustrial,Programacion,6.0,2,2023
 160,IngenieriaIndustrial,Estadistica,5.7,7,2024
 161,IngenieriaenComputacion,Algoritmos,8.0,6,2023
 162,IngenieriaCivil,Programacion,9.5,8,2024
-163,IngenieriaIndustrial,Base de Datos,7.4,4,2024
+163,IngenieriaIndustrial,BasedeDatos,7.4,4,2024
 164,IngenieriaCivil,Calculo,7.8,5,2022
 165,IngenieriaIndustrial,Estadistica,8.9,1,2024
 166,IngenieriaIndustrial,Estadistica,6.9,1,2023
@@ -169,11 +169,11 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 168,IngenieriaenComputacion,Fisica,5.5,4,2024
 169,IngenieriaenComputacion,Programacion,6.3,4,2022
 170,IngenieriaMecanica,Algoritmos,5.3,1,2022
-171,IngenieriaenComputacion,Base de Datos,9.1,5,2022
+171,IngenieriaenComputacion,BasedeDatos,9.1,5,2022
 172,IngenieriaCivil,Algoritmos,8.5,4,2023
 173,IngenieriaCivil,Fisica,8.4,5,2024
 174,IngenieriaCivil,Estadistica,8.9,3,2023
-175,IngenieriaenComputacion,Base de Datos,7.0,8,2023
+175,IngenieriaenComputacion,BasedeDatos,7.0,8,2023
 176,IngenieriaCivil,Fisica,7.3,3,2024
 177,IngenieriaMecanica,Estadistica,7.1,2,2022
 178,IngenieriaIndustrial,Algoritmos,9.2,5,2024
@@ -182,13 +182,13 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 181,IngenieriaenComputacion,Estadistica,6.9,8,2023
 182,IngenieriaIndustrial,Programacion,7.5,4,2022
 183,IngenieriaenComputacion,Estadistica,7.6,8,2022
-184,IngenieriaCivil,Base de Datos,8.9,6,2024
+184,IngenieriaCivil,BasedeDatos,8.9,6,2024
 185,IngenieriaIndustrial,Calculo,6.7,2,2024
 186,IngenieriaenComputacion,Calculo,6.0,5,2022
 187,IngenieriaCivil,Fisica,7.4,6,2024
 188,IngenieriaMecanica,Programacion,8.7,4,2024
 189,IngenieriaCivil,Calculo,8.0,1,2023
-190,IngenieriaIndustrial,Base de Datos,6.3,4,2024
+190,IngenieriaIndustrial,BasedeDatos,6.3,4,2024
 191,IngenieriaIndustrial,Estadistica,5.5,3,2022
 192,IngenieriaIndustrial,Estadistica,8.0,6,2024
 193,IngenieriaenComputacion,Algoritmos,9.0,4,2024
@@ -198,4 +198,4 @@ id_estudiante,carrera,materia,calificacion,semestre,año
 197,IngenieriaenComputacion,Programacion,7.1,5,2022
 198,IngenieriaCivil,Programacion,7.8,1,2024
 199,IngenieriaenComputacion,Estadistica,8.3,6,2022
-200,IngenieriaCivil,Base de Datos,9.8,8,2024
+200,IngenieriaCivil,BasedeDatos,9.8,8,2024
