@@ -1,7 +1,7 @@
-materia,alumnos_reprobados
-Estadistica,7
-Fisica,6
-Base de Datos,5
-Algoritmos,5
-Calculo,3
-Programacion,3
+materia,2022,2023,2024,alumnos_reprobados
+Estadistica,1,2,4,7
+Fisica,4,1,1,6
+BasedeDatos,2,2,1,5
+Algoritmos,4,0,1,5
+Calculo,2,0,1,3
+Programacion,1,0,2,3

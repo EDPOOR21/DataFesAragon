@@ -1,30 +1,30 @@
-id_estudiante,carrera,materia,riesgo
-10,IngenieriaenComputacion,Programacion,ALTO
-18,IngenieriaCivil,Estadistica,ALTO
-22,IngenieriaMecanica,Estadistica,ALTO
-26,IngenieriaenComputacion,Algoritmos,ALTO
-31,IngenieriaCivil,Base de Datos,ALTO
-38,IngenieriaCivil,Algoritmos,ALTO
-41,IngenieriaMecanica,Base de Datos,ALTO
-49,IngenieriaMecanica,Calculo,ALTO
-55,IngenieriaCivil,Fisica,ALTO
-61,IngenieriaMecanica,Calculo,ALTO
-65,IngenieriaCivil,Programacion,ALTO
-75,IngenieriaIndustrial,Base de Datos,ALTO
-86,IngenieriaenComputacion,Base de Datos,ALTO
-88,IngenieriaIndustrial,Estadistica,ALTO
-99,IngenieriaenComputacion,Fisica,ALTO
-104,IngenieriaenComputacion,Programacion,ALTO
-120,IngenieriaIndustrial,Base de Datos,ALTO
-125,IngenieriaIndustrial,Fisica,ALTO
-127,IngenieriaenComputacion,Fisica,ALTO
-133,IngenieriaCivil,Calculo,ALTO
-141,IngenieriaMecanica,Algoritmos,ALTO
-145,IngenieriaMecanica,Fisica,ALTO
-148,IngenieriaCivil,Estadistica,ALTO
-156,IngenieriaCivil,Estadistica,ALTO
-160,IngenieriaIndustrial,Estadistica,ALTO
-168,IngenieriaenComputacion,Fisica,ALTO
-170,IngenieriaMecanica,Algoritmos,ALTO
-191,IngenieriaIndustrial,Estadistica,ALTO
-194,IngenieriaCivil,Algoritmos,ALTO
+id_estudiante,carrera,materia,calificacion,semestre,año
+10,IngenieriaenComputacion,Programacion,5.5,6,2022
+18,IngenieriaCivil,Estadistica,5.8,7,2023
+22,IngenieriaMecanica,Estadistica,5.0,5,2024
+26,IngenieriaenComputacion,Algoritmos,5.0,6,2022
+31,IngenieriaCivil,BasedeDatos,5.3,8,2023
+38,IngenieriaCivil,Algoritmos,5.5,6,2022
+41,IngenieriaMecanica,BasedeDatos,5.8,5,2024
+49,IngenieriaMecanica,Calculo,5.7,3,2022
+55,IngenieriaCivil,Fisica,5.4,6,2022
+61,IngenieriaMecanica,Calculo,5.0,1,2022
+65,IngenieriaCivil,Programacion,5.1,6,2024
+75,IngenieriaIndustrial,BasedeDatos,5.9,3,2023
+86,IngenieriaenComputacion,BasedeDatos,5.7,2,2022
+88,IngenieriaIndustrial,Estadistica,5.7,4,2024
+99,IngenieriaenComputacion,Fisica,5.3,4,2022
+104,IngenieriaenComputacion,Programacion,5.5,2,2024
+120,IngenieriaIndustrial,BasedeDatos,5.9,1,2022
+125,IngenieriaIndustrial,Fisica,5.5,3,2023
+127,IngenieriaenComputacion,Fisica,5.3,6,2022
+133,IngenieriaCivil,Calculo,5.2,5,2024
+141,IngenieriaMecanica,Algoritmos,5.2,2,2024
+145,IngenieriaMecanica,Fisica,5.8,7,2022
+148,IngenieriaCivil,Estadistica,5.1,8,2023
+156,IngenieriaCivil,Estadistica,5.6,2,2024
+160,IngenieriaIndustrial,Estadistica,5.7,7,2024
+168,IngenieriaenComputacion,Fisica,5.5,4,2024
+170,IngenieriaMecanica,Algoritmos,5.3,1,2022
+191,IngenieriaIndustrial,Estadistica,5.5,3,2022
+194,IngenieriaCivil,Algoritmos,5.8,4,2022

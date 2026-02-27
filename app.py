@@ -12,7 +12,7 @@ st.set_page_config(
 st.title("📊 Panel de Control Académico")
 st.markdown("---")
 
-# 2. Barra Lateral - Menú Completo con 6 secciones
+# 2. Barra Lateral - Menú Completo
 st.sidebar.header("Menú de Reportes")
 menu = st.sidebar.radio(
     "Selecciona una opción:",
@@ -26,9 +26,9 @@ if menu == "Vista General":
     st.write("Explora el comportamiento académico de la facultad mediante estos reportes dinámicos.")
     col1, col2 = st.columns(2)
     with col1:
-        st.info("💡 **Análisis de Riesgo:** La nueva sección permite identificar alumnos con promedio menor a 6.")
+        st.info("💡 **Análisis de Tendencias:** Ahora puedes ver la evolución por año en la sección de materias.")
     with col2:
-        st.success("✅ **Estado:** Sistema completo y operativo.")
+        st.success("✅ **Estado:** Sistema sincronizado con GitHub.")
 
 # --- SECCIÓN: LISTA LIMPIA ---
 elif menu == "Lista limpia":
@@ -38,34 +38,65 @@ elif menu == "Lista limpia":
         st.metric("Total de registros", len(df_limpio))
         st.dataframe(df_limpio, use_container_width=True)
     except FileNotFoundError:
-        st.error("❌ No se encontró 'limpieza1.csv'")
+        st.error("❌ No se encontró 'limpieza1.csv'. Ejecuta primero Limpieza1.py")
 
-# --- SECCIÓN: INDICE DE MATERIAS ---
+# --- SECCIÓN: INDICE DE MATERIAS (GRÁFICAS POR AÑO) ---
 elif menu == "Indice de materias":
     st.header("📉 Materias con Mayor Índice de Reprobados")
     try:
         df_ind = pd.read_csv('IndiceMaterias.csv')
-        col_t, col_g = st.columns([1, 1])
-        with col_t:
+        
+        # 1. Tabla de datos completa
+        with st.expander("Ver tabla detallada por año"):
             st.dataframe(df_ind, use_container_width=True)
-        with col_g:
-            st.bar_chart(data=df_ind, x='materia', y='alumnos_reprobados')
-    except FileNotFoundError:
-        st.error("❌ No se encontró 'IndiceMaterias.csv'")
+        
+        # 2. Gráficas por Año (en columnas pequeñas)
+        st.subheader("Tendencia Individual por Año")
+        col_graf1, col_graf2, col_graf3 = st.columns(3)
+        
+        # Detectamos las columnas de años disponibles (2022, 2023, 2024)
+        años_columnas = [col for col in df_ind.columns if col not in ['materia', 'alumnos_reprobados']]
+        
+        with col_graf1:
+            if '2022' in años_columnas:
+                st.caption("Año 2022")
+                st.bar_chart(data=df_ind, x='materia', y='2022')
+        
+        with col_graf2:
+            if '2023' in años_columnas:
+                st.caption("Año 2023")
+                st.bar_chart(data=df_ind, x='materia', y='2023')
+                
+        with col_graf3:
+            if '2024' in años_columnas:
+                st.caption("Año 2024")
+                st.bar_chart(data=df_ind, x='materia', y='2024')
 
+        # 3. Gráfica General (Abajo y más grande)
+        st.markdown("---")
+        st.subheader("📊 Consolidado Histórico (Todos los años)")
+        st.bar_chart(data=df_ind, x='materia', y='alumnos_reprobados', color="#ff4b4b")
+        
+    except FileNotFoundError:
+        st.error("❌ No se encontró 'IndiceMaterias.csv'. Ejecuta IndiceMaterias.py")
 # --- SECCIÓN: RANKING DE CARRERAS ---
 elif menu == "Ranking de carreras":
     st.header("🏆 Ranking de Carreras por Promedio")
     try:
         df_prom = pd.read_csv('PromedioCarreras.csv')
-        años_disponibles = sorted(df_prom['Año'].unique(), reverse=True)
+        # Normalizamos nombres de columna por si acaso
+        df_prom.columns = [c.lower() for c in df_prom.columns]
+        col_año = 'año' if 'año' in df_prom.columns else 'anio'
+        
+        años_disponibles = sorted(df_prom[col_año].unique(), reverse=True)
         año_sel = st.selectbox("Selecciona el año:", años_disponibles)
-        df_filtrado = df_prom[df_prom['Año'] == año_sel]
+        df_filtrado = df_prom[df_prom[col_año] == año_sel]
+        
         col_t, col_g = st.columns([1, 1])
         with col_t:
-            st.dataframe(df_filtrado[['Carrera', 'Promedio_Calificacion']], use_container_width=True)
+            st.dataframe(df_filtrado, use_container_width=True)
         with col_g:
-            st.bar_chart(data=df_filtrado, x='Carrera', y='Promedio_Calificacion')
+            st.bar_chart(data=df_filtrado, x='carrera', y='promedio_calificacion')
     except FileNotFoundError:
         st.error("❌ No se encontró 'PromedioCarreras.csv'")
 
@@ -77,6 +108,7 @@ elif menu == "Tendencias por Semestre":
         col_m1, col_m2 = st.columns(2)
         col_m1.metric("Promedio General", f"{df_tend['Promedio_General'].mean():.2f}")
         col_m2.metric("Total Alumnos", int(df_tend['Total_Alumnos'].sum()))
+        
         tab1, tab2 = st.tabs(["📉 Promedio", "👥 Población"])
         with tab1:
             st.line_chart(data=df_tend, x='Semestre', y='Promedio_General')
@@ -85,36 +117,35 @@ elif menu == "Tendencias por Semestre":
     except FileNotFoundError:
         st.error("❌ No se encontró 'TendenciasSemestre.csv'")
 
-# --- SECCIÓN: ALUMNOS EN RIESGO (NUEVA) ---
+# --- SECCIÓN: ALUMNOS EN RIESGO ---
 elif menu == "Alumnos en Riesgo":
-    st.header("⚠️ Alerta de Alumnos con Riesgo ALTO")
-    st.write("Listado de estudiantes cuyo promedio general es inferior a 6.")
+    st.header("⚠️ Reporte de Alumnos con Riesgo Académico")
     
     try:
         df_riesgo = pd.read_csv('RiesgoAlumno.csv')
+        # Detectamos la columna de año que guardamos
+        col_anio = 'año' if 'año' in df_riesgo.columns else 'anio'
         
-        # Métrica de impacto
-        total_alumnos_riesgo = df_riesgo['id_id_estudiante'].nunique() if 'id_id_estudiante' in df_riesgo.columns else df_riesgo['id_estudiante'].nunique()
-        st.error(f"Se han identificado **{total_alumnos_riesgo}** alumnos en situación crítica.")
+        # Creamos las pestañas para cada año
+        tab2022, tab2023, tab2024 = st.tabs(["📅 2022", "📅 2023", "📅 2024"])
         
-        # Buscador interactivo
-        st.subheader("🔍 Buscador de Estudiante")
-        busqueda = st.text_input("Ingresa el ID del estudiante para verificar su situación:", "")
-        
-        if busqueda:
-            # Filtramos por ID (convertimos a string para asegurar coincidencia)
-            col_id = 'id_estudiante' if 'id_estudiante' in df_riesgo.columns else 'id_id_estudiante'
-            resultado = df_riesgo[df_riesgo[col_id].astype(str).str.contains(busqueda)]
+        with tab2022:
+            st.subheader("Estudiantes en riesgo - Ciclo 2022")
+            datos_2022 = df_riesgo[df_riesgo[col_anio] == 2022]
+            st.metric("Total Reprobados 2022", len(datos_2022))
+            st.dataframe(datos_2022, use_container_width=True)
             
-            if not resultado.empty:
-                st.success(f"Resultados para el ID: {busqueda}")
-                st.dataframe(resultado, use_container_width=True)
-            else:
-                st.warning("No se encontró ningún alumno con ese ID en la lista de riesgo.")
-        else:
-            # Si no hay búsqueda, mostramos toda la tabla
-            st.dataframe(df_riesgo, use_container_width=True)
+        with tab2023:
+            st.subheader("Estudiantes en riesgo - Ciclo 2023")
+            datos_2023 = df_riesgo[df_riesgo[col_anio] == 2023]
+            st.metric("Total Reprobados 2023", len(datos_2023))
+            st.dataframe(datos_2023, use_container_width=True)
             
+        with tab2024:
+            st.subheader("Estudiantes en riesgo - Ciclo 2024")
+            datos_2024 = df_riesgo[df_riesgo[col_anio] == 2024]
+            st.metric("Total Reprobados 2024", len(datos_2024))
+            st.dataframe(datos_2024, use_container_width=True)
+
     except FileNotFoundError:
-        st.error("❌ Error: No se encontró el archivo 'RiesgoAlumno.csv'.")
-        st.info("Asegúrate de ejecutar tu script 'RiesgoAlumnos' primero.")
+        st.error("❌ No se encontró 'RiesgoAlumno.csv'.")
